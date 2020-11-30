@@ -230,7 +230,7 @@ class NovaPoshtaApi2
      * @param string $method Method name
      * @param array  $params Required params
      */
-    private function request($model, $method, $params = null)
+    public function request($model, $method, $params = null)
     {
         // Get required URL
         $url = 'xml' == $this->format
